@@ -1,0 +1,3 @@
+[submodule "libraries/kicad-inventory"]
+	path = libraries/kicad-inventory
+	url = git@github.com:nnarain/kicad-inventory.git

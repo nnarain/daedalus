@@ -1,0 +1,18 @@
+# Python
+venv/*
+*.pyc
+
+# KiCAD
+*.bak
+*.kicad_pcb-bak
+*.kicad_pro-bak
+*.sch-bak
+*.csv
+*.tsv
+*.xml
+
+**/*-backups/*
+**/out/*
+
+test/*
+build/*
