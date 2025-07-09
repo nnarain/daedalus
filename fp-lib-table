@@ -1,0 +1,8 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "package_qfn_ext")(type "KiCad")(uri "${KIPRJMOD}/libraries/kicad-inventory/package_qfn_ext.pretty")(options "")(descr ""))
+  (lib (name "raspberrypi")(type "KiCad")(uri "${KIPRJMOD}/libraries/kicad-inventory/raspberrypi.pretty")(options "")(descr ""))
+  (lib (name "tactile_switches")(type "KiCad")(uri "${KIPRJMOD}/libraries/kicad-inventory/tactile_switches.pretty")(options "")(descr ""))
+  (lib (name "inductors")(type "KiCad")(uri "${KIPRJMOD}/libraries/kicad-inventory/inductors.pretty")(options "")(descr ""))
+  (lib (name "daedalus")(type "KiCad")(uri "${KIPRJMOD}/daedalus.pretty")(options "")(descr ""))
+)
