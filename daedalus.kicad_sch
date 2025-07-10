@@ -2751,6 +2751,16 @@
 		)
 		(uuid "01a0b74b-a904-4e18-a823-5d0b6f7dc8fa")
 	)
+	(text "I2C Address: $68"
+		(exclude_from_sim no)
+		(at 37.084 186.182 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "cd5d2a51-a7cb-4156-bb92-f41ada416b73")
+	)
 	(junction
 		(at 63.5 149.86)
 		(diameter 0)
