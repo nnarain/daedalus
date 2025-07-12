@@ -57,7 +57,7 @@ jobs:
     needs: [generate-outputs]
 
     steps:
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v4
         with:
           name: output
       - name: Create Release
@@ -70,10 +70,9 @@ jobs:
           release_name: Release ${{ github.ref_name }}
           draft: false
           prerelease: false
-      - uses: softprops/action-gh-release@v1
+      - uses: softprops/action-gh-release@v2
+        if: github.ref_type == 'tag'
         with:
           files: |
             ./daedalus-design_docs.zip
             ./daedalus-jlcpcb_fab.zip
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
