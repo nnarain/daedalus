@@ -1,5 +1,8 @@
 name: "KiCAD CI/CD for Daedalus"
 
+permissions:
+  contents: write
+
 on:
   push:
     tags:
