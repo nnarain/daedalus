@@ -76,3 +76,5 @@ jobs:
           files: |
             ./daedalus-design_docs.zip
             ./daedalus-jlcpcb_fab.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
