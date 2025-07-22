@@ -1,0 +1,26 @@
+[book]
+authors = ["Natesh Narain"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Daedalus Raspberry Pi Add-on"
+
+[output.html]
+default-theme = "light"
+
+[preprocessor.file-search]
+files = [
+    {alias = "schematic",     path = "../daedalus-schematic.pdf",   type = "link"},
+    {alias = "schematic-svg", path = "../daedalus-schematic.svg",   type = "image"},
+    {alias = "render-top",    path = "../daedalus-top.png",         type = "image"},
+    {alias = "render-bottom", path = "../daedalus-bottom.png",      type = "image"},
+    {alias = "ibom",          path = "../daedalus-ibom.html",       type = "link"},
+    {alias = "render-3d",     path = "../daedalus-3D_top.png",      type = "image"},
+    {alias = "jlcpcb-files",  path = "../daedalus-jlcpcb_fab.zip",  type = "link"},
+]
+
+[preprocessor.d2]
+path = "d2"
+layout = "elk"
+inline = true
+output-dir = "d2"
