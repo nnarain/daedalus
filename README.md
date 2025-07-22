@@ -1,5 +1,9 @@
 # Daedalus
 
+[![Latest Release](https://img.shields.io/github/v/release/nnarain/daedalus)](https://github.com/nnarain/daedalus/releases/latest)
+[![CI](https://img.shields.io/github/actions/workflow/status/nnarain/daedalus/release.yml)](https://github.com/nnarain/daedalus/actions/workflows/release.yml)
+[![Documentation](https://img.shields.io/badge/docs-mdBook-blue)](https://nnarain.github.io/daedalus/)
+
 ![Image not found](docs/daedalus-3d.png)
 
 Daedalus is a Raspberry Pi add-on that aim's to supply the necessary components for common robotics applications such as power distribution, IO, sensors and software defined embedded logic.
