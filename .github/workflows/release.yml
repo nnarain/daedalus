@@ -62,14 +62,47 @@ jobs:
     needs: [generate-outputs]
 
     steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch full history for changelog generation
       - uses: actions/download-artifact@v4
         with:
           name: output
+          path: output
+      - name: Generate changelog
+        id: changelog
+        run: |
+          TAG_NAME="${{ github.ref_name }}"
+          if python3 scripts/generate_changelog.py --tag "$TAG_NAME" > changelog.md 2>/dev/null; then
+            echo "Generated changelog from git history"
+          else
+            echo "## $TAG_NAME" > changelog.md
+            echo "" >> changelog.md
+            echo "Initial release of Daedalus PCB design." >> changelog.md
+          fi
+          echo "CHANGELOG_CONTENT<<EOF" >> $GITHUB_OUTPUT
+          cat changelog.md >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
       - uses: softprops/action-gh-release@v2
         if: github.ref_type == 'tag'
         with:
+          body: |
+            # Daedalus ${{ github.ref_name }}
+
+            ![3D PCB Render](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/daedalus-3d-render.png)
+
+            ${{ steps.changelog.outputs.CHANGELOG_CONTENT }}
+
+            ## Downloads
+
+            - **Design Documentation**: Complete schematics, datasheets, 
+              and design files
+            - **JLCPCB Fabrication**: Gerber files, drill files, BOM, 
+              and pick-and-place data for manufacturing
+            - **3D Render**: High-quality 3D visualization of the PCB
           files: |
-            ./daedalus-design_docs.zip
-            ./daedalus-jlcpcb_fab.zip
+            ./output/daedalus-design_docs.zip
+            ./output/daedalus-jlcpcb_fab.zip
+            ./output/renders/daedalus.png:daedalus-3d-render.png
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
