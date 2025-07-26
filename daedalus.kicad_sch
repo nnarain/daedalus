@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Daedalus")
-		(date "2025-06-08")
-		(rev "A")
+		(date "2025-07-26")
+		(rev "B")
 		(comment 1 "Author: Natesh Narain")
 	)
 	(lib_symbols
