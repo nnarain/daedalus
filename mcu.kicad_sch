@@ -5,7 +5,7 @@
 	(uuid "beb54901-6e3f-4e56-a2e5-251608042d2c")
 	(paper "A4")
 	(title_block
-		(rev "A")
+		(rev "B")
 	)
 	(lib_symbols
 		(symbol "Device:C"
