@@ -10,13 +10,13 @@ default-theme = "light"
 
 [preprocessor.file-search]
 files = [
-    {alias = "schematic",     path = "../daedalus-schematic.pdf",   type = "link"},
-    {alias = "schematic-svg", path = "../daedalus-schematic.svg",   type = "image"},
-    {alias = "render-top",    path = "../daedalus-top.png",         type = "image"},
-    {alias = "render-bottom", path = "../daedalus-bottom.png",      type = "image"},
-    {alias = "ibom",          path = "../daedalus-ibom.html",       type = "link"},
-    {alias = "render-3d",     path = "../daedalus-3D_top.png",      type = "image"},
-    {alias = "jlcpcb-files",  path = "../daedalus-jlcpcb_fab.zip",  type = "link"},
+    {alias = "schematic",     path = "../output/daedalus-schematic.pdf",   type = "link"},
+    {alias = "schematic-svg", path = "../output/daedalus-schematic.svg",   type = "image"},
+    {alias = "render-top",    path = "../output/daedalus-top.png",         type = "image"},
+    {alias = "render-bottom", path = "../output/daedalus-bottom.png",      type = "image"},
+    {alias = "ibom",          path = "../output/daedalus-ibom.html",       type = "link"},
+    {alias = "render-3d",     path = "../output/daedalus-3D_top.png",      type = "image"},
+    {alias = "jlcpcb-files",  path = "../output/daedalus-jlcpcb_fab.zip",  type = "link"},
 ]
 
 [preprocessor.d2]
