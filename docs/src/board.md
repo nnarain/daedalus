@@ -2,22 +2,22 @@
 
 ## Board Renders
 
-![Top render]({{#render-top}})
+![Top render]({{#find render-top}})
 
-![Bottom render]({{#render-bottom}})
+![Bottom render]({{#find render-bottom}})
 
-![3D render]({{#render-3d}})
+![3D render]({{#find render-3d}})
 
 ## Schematic
 
-![Schematic]({{#schematic-svg}})
+![Schematic]({{#find schematic-svg}})
 
-You can also download the [schematic PDF]({{#schematic}}).
+You can also download the [schematic PDF]({{#find schematic}}).
 
 ## Interactive BOM
 
-Check out the [interactive BOM]({{#ibom}}) for component placement and part information.
+Check out the [interactive BOM]({{#find ibom}}) for component placement and part information.
 
 ## Manufacturing Files
 
-Download [JLCPCB fabrication files]({{#jlcpcb-files}}) for PCB manufacturing.
+Download [JLCPCB fabrication files]({{#find jlcpcb-files}}) for PCB manufacturing.
