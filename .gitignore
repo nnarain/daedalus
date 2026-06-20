@@ -16,3 +16,5 @@ venv/*
 
 test/*
 build/*
+
+.history/
